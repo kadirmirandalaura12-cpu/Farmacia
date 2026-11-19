@@ -11,10 +11,11 @@
 classDiagram
     class Producto {
         <<abstract>>
-        -codigo: String
-        -nombre: String
-        -precio: Double
-        -stock: Int
+        #codigo: String
+        #nombre: String
+        #precio: Double
+        #stock: Int
+        +obtenerPrecio() Double
         +hayStock() Boolean
         +descripcion()* String
     }
